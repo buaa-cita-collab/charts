@@ -20,7 +20,7 @@ spec:
   controller_image: {{ .Values.controller_image }}
   kms_image: {{ .Values.kms_image }}
   nodes:
-  {{- range .Values.authorities }}
+  {{- range .Values.nodes }}
   - {{ . | quote }}
   {{- end }}
 
