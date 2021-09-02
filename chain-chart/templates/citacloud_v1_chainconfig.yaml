@@ -1,0 +1,26 @@
+apiVersion: citacloud.buaa.edu.cn/v1
+kind: ChainConfig
+metadata:
+  name: {{ .Values.chain_name }}
+spec:
+  # Add fields here
+  authorities: 
+  {{- range .Values.authorities }}
+  - {{ . | quote }}
+  {{- end }}
+  super_admin: {{ .Values.super_admin }}
+  # block_interval: "3"
+  timestamp: {{ .Values.timestamp | quote }}
+  # prevhash: "0x0000000000000000000000000000000000000000000000000000000000000000"
+  # enable_tls: "true"
+  network_image: {{ .Values.network_image }}
+  consensus_image: {{ .Values.consensus_image }}
+  executor_image: {{ .Values.executor_image }}
+  storage_image: {{ .Values.storage_image }}
+  controller_image: {{ .Values.controller_image }}
+  kms_image: {{ .Values.kms_image }}
+  nodes:
+  {{- range .Values.authorities }}
+  - {{ . | quote }}
+  {{- end }}
+

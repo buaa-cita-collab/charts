@@ -1,0 +1,13 @@
+apiVersion: citacloud.buaa.edu.cn/v1
+kind: ChainNode
+metadata:
+  name: {{ .Values.node_name }}
+spec:
+  # Add fields here
+  configname: {{ .Values.chain_name }}
+  log_level: {{ .Values.log_level }}
+  network_key: {{ .Values.network_key }}
+  node_address: {{ .Values.node_address }}
+  node_key: {{ .Values.node_key }}
+  kms_pwd: {{ .Values.kms_pwd | quote }}
+  update_policy: {{ .Values.update_policy }}

@@ -1,0 +1,10 @@
+node_name: chainnode-sample-node-1
+chain_name: chainconfig-sample
+log_level: info
+network_key: ""
+node_address: ""
+node_key: ""
+kms_pwd: "123456"
+update_policy: AutoUpdate
+node_port: 0
+
