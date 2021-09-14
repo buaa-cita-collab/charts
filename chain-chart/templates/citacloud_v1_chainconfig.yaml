@@ -21,6 +21,7 @@ spec:
   kms_image: {{ .Values.kms_image }}
   nodes:
   {{- range .Values.nodes }}
-  - {{ . | quote }}
+  - host: {{ .host | quote }}
+    port: {{ .port | quote }}
   {{- end }}
 
