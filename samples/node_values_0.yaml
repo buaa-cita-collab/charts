@@ -7,3 +7,6 @@ node_key: "0xdf75f7e807b0e9568799ee13235821167f000a56bb9681b47c358b1ab8ec6f3b"
 kms_pwd: "123456"
 update_policy: AutoUpdate
 node_port: 30019
+
+self_host: "chainnode-sample-node-0"
+self_port: "40000"

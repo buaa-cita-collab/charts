@@ -3,6 +3,8 @@ kind: ChainNode
 metadata:
   name: {{ .Values.node_name }}
 spec:
+  self_host: {{ .Values.self_host }}
+  self_port: {{ .Values.self_port | quote }}
   # Add fields here
   configname: {{ .Values.chain_name }}
   log_level: {{ .Values.log_level }}

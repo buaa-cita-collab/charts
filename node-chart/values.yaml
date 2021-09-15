@@ -7,4 +7,5 @@ node_key: ""
 kms_pwd: "123456"
 update_policy: AutoUpdate
 node_port: 0
-
+self_host: "chainnode-sample-node-1"
+self_port: "40000"
