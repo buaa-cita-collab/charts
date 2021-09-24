@@ -36,3 +36,5 @@ helm install -f samples/(your node valus).yaml (your node name) node-chart/
 ```
 
 install.sh - In a single-cluster scenario, establish a chain and create new nodes in batches
+
+gen_key.py - Script to generate the **network_key,  node_address, node_key** of the new node
