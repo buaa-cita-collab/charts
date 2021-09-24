@@ -24,18 +24,19 @@ Useful Helm Client Commands:
 
 ### introduce charts
 
-#### chain-chart - Create the chain of CITA-Cloud
+#### chain-chart/ - Create the chain of CITA-Cloud
 
 ```
 helm install chain chain-chart
 ```
-#### node-chart - Create the node of CITA-Cloud
+#### node-chart/ - Create the node of CITA-Cloud
 
 ```
 helm install -f samples/(your node valus).yaml (your node name) node-chart/
 ```
 
+#### samples/ - Template repository used to instantiate the chart
+
 #### install.sh - In a single-cluster scenario, establish a chain and create new nodes in batches
 
 #### gen_key.py - Script to generate the **network_key,  node_address, node_key** of the new node
-
