@@ -35,3 +35,4 @@ node-chart - Create the node of CITA-Cloud
 helm install -f samples/(your node valus).yaml (your node name) node-chart/
 ```
 
+install.sh - In a single-cluster scenario, establish a chain and create new nodes in batches
