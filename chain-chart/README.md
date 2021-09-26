@@ -15,18 +15,18 @@ Used to initialize the chain and its attribute configuration
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| chain_name | string | `""` |  |
-| authorities |  | `[]` |  |
-| super_admin |  | `""` |  |
-| timestamp |  | `""` |  |
-| network_image |  | `""` | Name of nwtwork container |
-| consensus_image |  | `""` |  |
-| executor_image |  | `""` |  |
-| storage_image |  | `""` |  |
-| controller_image |  | `""` |  |
-| kms_image |  | `""` |  |
-| pvc_path |  | `""` |  |
-| hostname |  | `""` |  |
+| chain_name | string | `"chainconfig-sample"` | Name of chain |
+| authorities | string | "" | Addresses of all consensus nodes |
+| super_admin | string | `""` | Address of all SuperAdmin |
+| timestamp | string | `""` | Time of chain starting |
+| network_image | string | `"citacloud/network_direct:v6.0.0"` | Image of network container and version |
+| consensus_image | string | `"citacloud/consensus_bft:v6.0.0"` | Image of consensus container and version |
+| executor_image | string | `"citacloud/executor_evm:v6.1.0"` | Image of executor container and version |
+| storage_image | string | `"citacloud/storage_rocksdb:v6.1.0"` | Image of storage container and version |
+| controller_image | string | `"citacloud/controller:v6.2.0"` | Image of controller container and version |
+| kms_image | string | `"citacloud/kms_sm:v6.0.0"` | Image of kms container |
+| pvc_path | string | `"/root/cita-cloud-datadir"` | Path of PVC |
+| hostname | string | `""` | - |
 
 #### nodes
 
