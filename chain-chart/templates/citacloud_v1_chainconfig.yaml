@@ -2,6 +2,7 @@ apiVersion: citacloud.buaa.edu.cn/v1
 kind: ChainConfig
 metadata:
   name: {{ .Values.chain_name }}
+  namespace: {{ .Values.chain_namespace }}
 spec:
   # Add fields here
   authorities: 

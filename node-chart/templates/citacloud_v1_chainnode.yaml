@@ -2,11 +2,13 @@ apiVersion: citacloud.buaa.edu.cn/v1
 kind: ChainNode
 metadata:
   name: {{ .Values.node_name }}
+  namespace: {{ .Values.node_namespace }}
 spec:
   self_host: {{ .Values.self_host }}
   self_port: {{ .Values.self_port | quote }}
   # Add fields here
-  configname: {{ .Values.chain_name }}
+  config_name: {{ .Values.chain_name }}
+  config_namespace: {{ .Values.chain_namespace }}
   log_level: {{ .Values.log_level }}
   network_key: {{ .Values.network_key }}
   node_address: {{ .Values.node_address }}

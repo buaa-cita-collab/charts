@@ -3,6 +3,7 @@
 # Declare variables to be passed into your templates.
 
 chain_name: chainconfig-sample
+chain_namespace: chainconfig-sample
 authorities:
 - 0x2587d77a67d39ced4dee34bf5ad7e6cddff4d206
 - 0xab0ea7ecc9aa0d2b95777009bd2b0cc3b745f0f8

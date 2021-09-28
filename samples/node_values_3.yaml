@@ -1,9 +1,0 @@
-node_name: chainnode-sample-node-3
-chain_name: chainconfig-sample
-log_level: info
-network_key: "MHhmMDMwNWQ2YmFjODViODEzZmU1MzM4MzUyMjY1MmUxNDA5MjIwZmIxMTM2NTQ3YzAwOGYxYzJjOGI5MDYyNTll"
-node_address: "0xc9f49c91f40c920dc88f4ccad01a5fbc77668c71"
-node_key: "0x00c80a7362400ee893f784df91b6c353df6b3e8097f0ea0bf24aca1363234325"
-kms_pwd: "123456"
-update_policy: AutoUpdate
-node_port: 30020

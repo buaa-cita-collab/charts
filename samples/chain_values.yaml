@@ -3,15 +3,16 @@
 # Declare variables to be passed into your templates.
 
 chain_name: chainconfig-sample
+chain_namespace: default
 authorities:
   - 0x2587d77a67d39ced4dee34bf5ad7e6cddff4d206
   - 0xab0ea7ecc9aa0d2b95777009bd2b0cc3b745f0f8
 super_admin: 0x73f003e2ef1988e52831153873785444b2afbf31
 timestamp: "1626417162942"
-pvc_path: /root/cita-cloud-datadir
-# pvc_path: /home/ffff/cita-cloud-datadir
-hostname: cita-cloud-k8s
-# hostname: fffflu2004
+# pvc_path: /root/cita-cloud-datadir
+pvc_path: /home/ffff/cita-cloud-datadir
+# hostname: cita-cloud-k8s
+hostname: fffflu2004
 network_image: citacloud/network_direct:v6.0.0
 consensus_image: citacloud/consensus_bft:v6.0.0
 executor_image: citacloud/executor_evm:v6.1.0

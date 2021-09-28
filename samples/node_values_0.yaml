@@ -1,5 +1,7 @@
 node_name: chainnode-sample-node-0
+node_namespace: default
 chain_name: chainconfig-sample
+chain_namespace: default
 log_level: info
 network_key: "MHhiZDY4YTQ2NDg5Yzg3ZjE5MWI2ZTViNjg0ZDJhOTllNTZkZWVkNzA1YjAwM2VhYTUzYWU3MjY5MjY2MDRlYzlh"
 node_address: "0x2587d77a67d39ced4dee34bf5ad7e6cddff4d206"
