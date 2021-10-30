@@ -9,10 +9,10 @@ authorities:
   - 0xab0ea7ecc9aa0d2b95777009bd2b0cc3b745f0f8
 super_admin: 0x73f003e2ef1988e52831153873785444b2afbf31
 timestamp: "1626417162942"
-# pvc_path: /root/cita-cloud-datadir
-pvc_path: /home/ffff/cita-cloud-datadir
-# hostname: cita-cloud-k8s
-hostname: fffflu2004
+pvc_path: /root/cita-cloud-datadir
+# pvc_path: /home/ffff/cita-cloud-datadir
+hostname: cita-cloud-k8s
+# hostname: fffflu2004
 network_image: citacloud/network_direct:v6.0.0
 consensus_image: citacloud/consensus_bft:v6.0.0
 executor_image: citacloud/executor_evm:v6.1.0
@@ -20,8 +20,12 @@ storage_image: citacloud/storage_rocksdb:v6.1.0
 controller_image: citacloud/controller:v6.2.0
 kms_image: citacloud/kms_sm:v6.0.0
 nodes:
-- host: chainnode-sample-node-0
-  port: "40000"
-- host: chainnode-sample-node-1
-  port: "40000"
+- cluster: cita1
+  name: chainnode-sample-node-0
+  host: 39.106.40.94
+  port: "30100"
+- cluster: cita2
+  name: chainnode-sample-node-1
+  host: 172.27.2.253
+  port: "30101"
 

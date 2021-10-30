@@ -24,5 +24,7 @@ spec:
   {{- range .Values.nodes }}
   - host: {{ .host | quote }}
     port: {{ .port | quote }}
+    cluster: {{ .cluster | quote }}
+    name: {{ .name | quote }}
   {{- end }}
 

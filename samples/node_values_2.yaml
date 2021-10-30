@@ -10,3 +10,5 @@ kms_pwd: "123456"
 update_policy: AutoUpdate
 node_port: 30016
 
+
+cluster: cita1

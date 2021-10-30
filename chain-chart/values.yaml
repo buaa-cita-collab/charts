@@ -16,9 +16,13 @@ storage_image: citacloud/storage_rocksdb:v6.1.0
 controller_image: citacloud/controller:v6.2.0
 kms_image: citacloud/kms_sm:v6.0.0
 nodes:
-- host: "chainnode-sample-node-0"
+- cluster: cita1
+  name: chainnode-sample-node-0
+  host: chainnode-sample-node-0
   port: "40000"
-- host: "chainnode-sample-node-1"
+- cluster: cita1
+  name: chainnode-sample-node-1
+  host: chainnode-sample-node-1
   port: "40000"
 
 pvc_path: /root/cita-cloud-datadir
